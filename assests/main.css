@@ -7,8 +7,16 @@ ul>li>a{
     cursor: pointer;
 }
 
-section{
-    height: auto;
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+main{
+    height: 100%;
 }
 
 .title{
@@ -19,17 +27,19 @@ section{
 
 .orange{
     background-color: #f55700;
-    
 }
-
 
 .blue{
     background-color: #00a4cc;
-    height: auto;
+    
 }
 
 /* start of mobile CSS */
 @media only screen and (max-width: 500px) {
+    body{
+        height: 100%;
+    }
+    
     .about-me{
         padding: 0 15px;
         font-size: 1.5em;
@@ -40,6 +50,7 @@ section{
     .title p{
         font-size: 1.5em;
         padding: 14px;
+        font-weight: bold;
     }
     
     main p{
@@ -57,30 +68,39 @@ section{
 
     .blue{
         text-align: center;
-        height: auto;
+        height: 100%;
+    }
+
+    .bottom-title{
+        padding-top: 15px;
+        font-size: 1.6em;
+        font-weight: bold;
     }
 
     .center-image img{
         width: 250px;
         height: 200px;
-        margin-top: 30px; 
+        margin-top: 15px; 
     }
 
-    li{
+    ul>li{
         display: inline-block;
         padding: 15px;
     }
 
-    a{
+    ul>li>a{
         text-decoration: none;
         color: black;
-        border: 1px solid;
+        border: 1px solid black;
         padding: 10px;
         border-radius: 15px;
+        background-color: whitesmoke;
     }
-    
 
+    .bot-list{
+        padding-top: 15px;
+        font-size: 1.2em;
+    }
 
-    
   }
 
