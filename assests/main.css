@@ -69,16 +69,17 @@ ul > li > a {
 
 .blue {
   background-color: #00a4cc;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: space-around;
 }
 
 .blue img {
   width: 250px;
   height: 200px;
   margin-top: 15px;
-}
-
-.box-project{
-    display: flex;
+  padding: 0 15px;
 }
 
 /* start of mobile CSS */
