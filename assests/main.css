@@ -4,7 +4,7 @@ html {
   margin: 0px;
 }
 
-ul > li > a {
+ul > li:hover {
   cursor: pointer;
 }
 
@@ -37,6 +37,9 @@ main {
 .about-me {
   margin: 0 115px;
   font-size: 1.2em;
+  width: 600px;
+  text-align: center;
+  margin: 0px auto;
 }
 
 .first-one {
@@ -54,10 +57,6 @@ main {
   padding: 15px 0;
 }
 
-ul > li > a {
-  cursor: pointer;
-}
-
 .blue li {
   display: inline;
 }
@@ -65,6 +64,11 @@ ul > li > a {
 .blue li > a {
   text-decoration: none;
   color: black;
+  text-align: center;
+  font-size: 1.1em;
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 5px; 
 }
 
 .blue {
@@ -78,9 +82,19 @@ ul > li > a {
 .blue img {
   width: 250px;
   height: 200px;
-  margin-top: 15px;
+  margin: 15px 0;
   padding: 0 15px;
 }
+
+.box-project{
+    text-align: center;
+}
+
+.bot-list {
+    padding-top: 5px;
+    font-size: 1em;
+    margin-top: 15px;
+  }
 
 /* start of mobile CSS */
 @media only screen and (max-width: 500px) {
@@ -116,6 +130,7 @@ ul > li > a {
 
   .box-project{
       display: block;
+      text-align: center;
   }
 
   .bottom-title {
