@@ -1,106 +1,150 @@
-*, html{
-    padding: 0px; 
-    margin: 0px;
+*,
+html {
+  padding: 0px;
+  margin: 0px;
 }
 
-ul>li>a{
-    cursor: pointer;
+ul > li > a {
+  cursor: pointer;
 }
 
-html{
-    height: 100%;
+html {
+  height: 100%;
 }
 
-body{
-    height: 100%;
+body {
+  height: 100%;
 }
 
-main{
-    height: 100%;
+main {
+  height: 100%;
 }
 
-.title{
-    text-align: center;
-    background-color: #f55700;
-
+.title {
+  text-align: center;
+  background-color: #f55700;
 }
 
-.orange{
-    background-color: #f55700;
+.orange {
+  background-color: #f55700;
 }
 
-.blue{
-    background-color: #00a4cc;
-    
+.title {
+  font-size: 2em;
+  padding: 15px 0;
+}
+
+.about-me {
+  margin: 0 115px;
+  font-size: 1.2em;
+}
+
+.first-one {
+  padding-bottom: 15px;
+}
+
+.last-one {
+  padding-bottom: 30px;
+}
+
+.bottom-title {
+  background-color: #00a4cc;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 15px 0;
+}
+
+ul > li > a {
+  cursor: pointer;
+}
+
+.blue li {
+  display: inline;
+}
+
+.blue li > a {
+  text-decoration: none;
+  color: black;
+}
+
+.blue {
+  background-color: #00a4cc;
+}
+
+.blue img {
+  width: 250px;
+  height: 200px;
+  margin-top: 15px;
+}
+
+.box-project{
+    display: flex;
 }
 
 /* start of mobile CSS */
 @media only screen and (max-width: 500px) {
-    body{
-        height: 100%;
-    }
-    
-    .about-me{
-        padding: 0 15px;
-        font-size: 1.5em;
-        line-height: 30px;
-        
-    }
-
-    .title p{
-        font-size: 1.5em;
-        padding: 14px;
-        font-weight: bold;
-    }
-    
-    main p{
-        margin: 0 15px;
-    }
-
-    .first-one{
-        padding-bottom: 15px;
-    }
-    
-    
-    .last-one{
-        padding-bottom: 50px;
-    }
-
-    .blue{
-        text-align: center;
-        height: 100%;
-    }
-
-    .bottom-title{
-        padding-top: 15px;
-        font-size: 1.6em;
-        font-weight: bold;
-    }
-
-    .center-image img{
-        width: 250px;
-        height: 200px;
-        margin-top: 15px; 
-    }
-
-    ul>li{
-        display: inline-block;
-        padding: 15px;
-    }
-
-    ul>li>a{
-        text-decoration: none;
-        color: black;
-        border: 1px solid black;
-        padding: 10px;
-        border-radius: 15px;
-        background-color: whitesmoke;
-    }
-
-    .bot-list{
-        padding-top: 15px;
-        font-size: 1.2em;
-    }
-
+  body {
+    height: 100%;
   }
 
+  .about-me {
+    padding: 0 10px;
+    font-size: 1.2em;
+    line-height: 30px;
+    margin: 0px;
+  }
+
+  .title p {
+    font-size: 1.5em;
+    padding: 14px;
+    font-weight: bold;
+  }
+
+  .first-one {
+    padding-bottom: 15px;
+  }
+
+  .last-one {
+    padding-bottom: 50px;
+  }
+
+  .blue {
+    text-align: center;
+    height: auto;
+  }
+
+  .box-project{
+      display: block;
+  }
+
+  .bottom-title {
+    padding-top: 15px;
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+
+  .blue img {
+    width: 250px;
+    height: 200px;
+    margin: 15px 0;
+  }
+
+  ul > li {
+    display: inline-block;
+    padding: 15px;
+  }
+
+  ul > li > a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 15px;
+  }
+
+  .bot-list {
+    padding-top: 15px;
+    font-size: 1.2em;
+  }
+}
