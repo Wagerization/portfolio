@@ -27,17 +27,14 @@ main {
 }
 
 .title {
-  font-size: 48px;
   padding: 15px 0;
   margin-bottom: 30px;
 }
 
 .about-me {
-  margin: 0 115px;
   font-size: 16px;
   line-height: 22px;
-  text-align: center;
-  margin: 0px 150px;
+  text-align: left;
   background-color: rgb(77, 232, 134);
   
 }
@@ -52,10 +49,10 @@ main {
 
 .bottom-title {
   text-align: center;
-  font-size: 48px;
   padding: 15px 0;
   margin-top: 30px;
   background-color: rgb(97, 255, 250);
+  
 }
 
 .middle-section li {
@@ -65,14 +62,11 @@ main {
 .middle-section li > a {
   text-decoration: none;
   color: black;
-  text-align: center;
+  text-align: left;
   font-size: 1.1em;
   cursor: pointer;
-  border: 1px solid black;
   padding: 10px; 
   margin: 5px;
-  background-color: rgba(98, 84, 255, 0.973);
-  border-radius: 50px;
 }
 
 .middle-section {
@@ -91,14 +85,15 @@ main {
 
 .box-project{
     text-align: center;
-    background-color: rgb(77, 232, 134);
-    margin-top: 40px;
+
 }
 
 .bot-list {
     padding-top: 5px;
     font-size: 16px;
-    margin: 15px 150px; 
+    margin: 15px 150px;
+    text-align: center;
+    line-height: 23px;
   }
 
 footer{
@@ -122,10 +117,8 @@ footer{
 .contact a{
     text-decoration: none;
     color: black;
-    background-color: rgba(98, 84, 255, 0.973);
     padding: 5px;
     border-radius: 50px;
-    border: 1px solid black;
 }
 
 .contact li{
@@ -133,16 +126,18 @@ footer{
 }
 
 /* start of mobile CSS */
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 500px) {
   body {
     height: 100%;
+  }
+  .first-one, .last-one{
+    margin: 0 50px;
   }
 
   .about-me {
     padding: 0 10px;
     font-size: 16px;
     line-height: 22px;
-    margin: 0px 30px;
   }
 
   .title p {
@@ -159,8 +154,9 @@ footer{
     padding-bottom: 50px;
   }
 
+
   .middle-section {
-    text-align: center;
+    text-align: left;
     height: auto;
   }
 
@@ -194,8 +190,6 @@ footer{
     border: 1px solid black;
     padding: 10px; 
     margin: 5px;
-    background-color: rgba(98, 84, 255, 0.973);
-    border-radius: 50px;
   }
 
   .bot-list {
