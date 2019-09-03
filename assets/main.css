@@ -126,18 +126,24 @@ footer{
 }
 
 /* start of mobile CSS */
-@media only screen and (min-width: 500px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
   body {
     height: 100%;
   }
+  
   .first-one, .last-one{
     margin: 0 50px;
+  }
+ 
+  .about-me p{
+    padding: 30px;
   }
 
   .about-me {
     padding: 0 10px;
     font-size: 16px;
     line-height: 22px;
+    padding: 30px;
   }
 
   .title p {
@@ -161,8 +167,8 @@ footer{
   }
 
   .box-project{
-      display: block;
-      text-align: center;
+    display: block;
+    text-align: center;
   }
 
   .bottom-title {
