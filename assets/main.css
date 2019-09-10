@@ -20,7 +20,7 @@ main {
 
 .title {
   text-align: center;
-  background-color: rgb(97, 255, 250);
+  background-color: rgba(94, 171, 168, .6);
 }
 
 .title {
@@ -30,7 +30,7 @@ main {
 }
 
 .about-title{
-  background-color: rgb(77, 232, 134);
+  background-color: rgba(159, 186, 147, .73);
   padding: 30px;
   text-align: left;
 }
@@ -39,16 +39,21 @@ main {
   font-size: 16px;
   line-height: 22px;
   text-align: left;
-  background-color: rgb(77, 232, 134);
+  background-color: rgba(159, 186, 147, .73);
   padding: 15px 30px;;
   
+}
+
+.about-div{
+  width: 600px;
+  margin: 0px auto;
 }
 
 .bottom-title {
   text-align: center;
   padding: 15px 0;
   margin-top: 30px;
-  background-color: rgb(97, 255, 250);
+  background-color: rgba(94, 171, 168, .6);
   
 }
 
@@ -101,11 +106,11 @@ footer{
 .contact-title{
     margin-bottom: 15px;
     padding: 25px 0;
-    background-color: rgb(97, 255, 250);
+    background-color: rgba(94, 171, 168, .6);
 }
 
 .contact{
-    background-color: rgb(77, 232, 134);
+    background-color: rgba(159, 186, 147, .73);
     font-size: 16px;
     line-height: 22px;
     padding-bottom: 15px;
