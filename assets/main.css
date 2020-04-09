@@ -8,29 +8,28 @@ ul > li > a:hover {
   cursor: pointer;
 }
 
-
 body {
   height: 100%;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 main {
   height: 100%;
 }
 
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
 .title {
   text-align: center;
-  background-color: rgba(94, 171, 168, .6);
-}
-
-.title {
   padding: 15px 0;
-  margin-bottom: 30px;
-
 }
 
-.about-title{
-  background-color: rgba(159, 186, 147, .73);
+.about-title {
   padding: 30px;
   text-align: left;
 }
@@ -39,22 +38,17 @@ main {
   font-size: 16px;
   line-height: 22px;
   text-align: left;
-  background-color: rgba(159, 186, 147, .73);
-  padding: 15px 30px;;
-  
+  padding: 15px 30px;
 }
 
-.about-div{
+.about-div {
   width: 600px;
   margin: 0px auto;
 }
 
 .bottom-title {
   text-align: center;
-  padding: 15px 0;
   margin-top: 30px;
-  background-color: rgba(94, 171, 168, .6);
-  
 }
 
 .middle-section li {
@@ -67,7 +61,8 @@ main {
   text-align: left;
   font-size: 1.1em;
   cursor: pointer;
-  padding: 10px; 
+  padding: 10px;
+  text-decoration: underline;
   margin: 5px;
 }
 
@@ -75,7 +70,9 @@ main {
   display: flex;
   flex-wrap: wrap;
   height: auto;
-  justify-content: space-around;
+  width: auto;
+  margin: 0px auto;
+  justify-content: space-evenly;
 }
 
 .middle-section img {
@@ -85,55 +82,58 @@ main {
   padding: 0 15px;
 }
 
-.box-project{
-    text-align: center;
-
+.box-project {
+  text-align: center;
+  width: auto;
+  margin: 0px auto;
 }
 
 .bot-list {
-    padding-top: 5px;
-    font-size: 16px;
-    text-align: center;
-    line-height: 23px;
-    width: 300px;
-  }
-
-footer{
-    text-align: center;
-    margin-top: 50px;
+  padding-top: 20px;
+  text-align: center;
+  line-height: 23px;
+  width: 350px;
 }
 
-.contact-title{
-    margin-bottom: 15px;
-    padding: 25px 0;
-    background-color: rgba(94, 171, 168, .6);
+footer {
+  text-align: center;
+  margin-top: 50px;
 }
 
-.contact{
-    background-color: rgba(159, 186, 147, .73);
-    font-size: 16px;
-    line-height: 22px;
-    padding-bottom: 15px;
+.contact-title {
+  padding: 15px;
 }
 
-.contact a{
-    text-decoration: none;
-    color: black;
-    padding: 5px;
-    border-radius: 50px;
+.contact-title > ul > li {
+  text-align: right;
 }
 
-.contact li{
-    margin: 10px;
+.contact {
+  font-size: 16px;
+  line-height: 22px;
+  padding-bottom: 15px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.contact li {
+  margin: 10px;
 }
 
 /* start of mobile CSS */
-@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
   body {
     height: 100%;
   }
-  
-  .about-me p{
+
+  /* use a flex shrink the about me div p */
+
+  .about-me p {
     padding: 30px;
   }
 
@@ -150,24 +150,17 @@ footer{
     font-weight: bold;
   }
 
-  .first-one {
-    padding-bottom: 15px;
-  }
-
-  .last-one {
-    padding-bottom: 50px;
-  }
-
-
   .middle-section {
     text-align: left;
     height: auto;
+    width: auto;
   }
 
-  .box-project{
+  .box-project {
     display: block;
     text-align: center;
     height: auto;
+    width: auto;
   }
 
   .bottom-title {
@@ -185,21 +178,21 @@ footer{
   .middle-section li {
     display: inline;
   }
-  
+
   .middle-section li > a {
     text-decoration: none;
     color: black;
     text-align: center;
     font-size: 1.1em;
     cursor: pointer;
-    border: 1px solid black;
-    padding: 10px; 
+    padding: 10px;
+    text-decoration: underline;
     margin: 5px;
   }
 
   .bot-list {
-    padding: 15px 30px;
     line-height: 22px;
     margin: 0 0px;
+    width: 300px;
   }
 }
